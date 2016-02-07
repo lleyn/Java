@@ -23,7 +23,7 @@ public class Lab2_4 {
         int M;
         try {
             Ns = bufferedReader.readLine();//читаем строку с клавиатуры
-            N = Integer.parseInt(Ns);
+            N = Integer.parseInt(Ns);//проверка на правильность введенных символов
         } catch (Exception ex) {
             System.out.println("Произшлв ощибка при попытке ввода N.");
             return;
@@ -36,7 +36,7 @@ public class Lab2_4 {
             System.out.println("Произшлв ощибка при попытке ввода M.");
             return;
         }
-        System.out.println(min(N, M)+ " минимальное число");
+        System.out.println(min(N, M)+ " минимальное число");//вывод минимального числа
 
     }
 

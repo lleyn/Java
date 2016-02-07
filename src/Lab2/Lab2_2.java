@@ -22,9 +22,10 @@ public class Lab2_2 {
         int M = 0;
         try {
             Ns = bufferedReader.readLine();//читаем строку с клавиатуры
-            N = Integer.parseInt(Ns);
+            N = Integer.parseInt(Ns);//проверка на правильность ввода
         } catch (Exception ex) {
             System.out.println("Произшлв ощибка при попытке ввода N.");
+            return;
         }
 
         try {
@@ -32,6 +33,7 @@ public class Lab2_2 {
             M = Integer.parseInt(Ms);//проверка на правильность ввода
         } catch (Exception ex) {
             System.out.println("Произшлв ощибка при попытке ввода M.");
+            return;
         }
 
         if ((N>0)&&(M>0)){
