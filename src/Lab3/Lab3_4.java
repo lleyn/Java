@@ -10,7 +10,7 @@ public class Lab3_4 {
         for (int j = 0;j < 8;j++ ) {
             for (int i = 0; i < 5; i++) {
                 a[j][i] = (int) (Math.random() * 90 + 10);
-                System.out.print(a[j][i] + " ");
+                System.out.format("%3d",a[j][i]);
             }
             System.out.println();
         }
