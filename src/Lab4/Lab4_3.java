@@ -44,7 +44,6 @@ public class Lab4_3 {
         sort(c,d);
     }
     public static void sort(int a,int[][] d) {
-        while (int j<10; )
 
 
         for (int i = 0; i < 10; i++) {
