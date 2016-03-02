@@ -3,8 +3,8 @@ package Lab3;
 
 /**
  * Created by lleyn on 07.02.16.
+ * Создать двумерный массив 8 на 5 из случафных чисел от 10 до 99
  */
-//Создать двумерный массив 8 на 5 из случафных чисел от 10 до 99
 public class Lab3_4 {
     public static void main(String[] args) {
         int[][] a = new int[8][5];//Двумерный массив

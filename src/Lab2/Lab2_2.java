@@ -2,8 +2,9 @@ package Lab2;
 
 /**
  * Created by lleyn on 06.02.16.
+ * Вывод прямоугольника m на n из "8"
  */
-//Вывод прямоугольника m на n из "8"
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;

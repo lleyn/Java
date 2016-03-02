@@ -3,9 +3,9 @@ package Lab3;
 
 /**
  * Created by lleyn on 07.02.16.
+ * создание массива из четных чисел от 1 до 20
  */
 
-//создание массива из четных чисел от 1 до 20
 public class Lab3_1 {
     public static void main(String[] args) {
         int[] a = new int[10];//массив четных чисел

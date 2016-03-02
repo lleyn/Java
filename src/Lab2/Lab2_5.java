@@ -9,9 +9,10 @@ import java.util.regex.Pattern;
 
 /**
  * Created by lleyn on 06.02.16.
+ * Сравнение имен
  */
 
-//Сравнение имен
+
 public class Lab2_5 {
     public static void main(String[] args) {
         InputStream inputStream = System.in;

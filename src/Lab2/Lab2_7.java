@@ -7,9 +7,9 @@ import java.io.Reader;
 
 /**
  * Created by lleyn on 07.02.16.
+ * Определение положения точки на координатной прямой
  */
 
-//Определение положения точки на координатной прямой
 public class Lab2_7 {
 
     public static void main(String[] args) {

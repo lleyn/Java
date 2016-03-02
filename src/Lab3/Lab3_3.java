@@ -3,6 +3,7 @@ package Lab3;
 
 /**
  * Created by lleyn on 07.02.16.
+ * Создание массива: 15 эллементов, случайные числа от 0 до 9
  */
 public class Lab3_3 {
     public static void main(String[] args) {

@@ -3,8 +3,9 @@ package Lab3;
 
 /**
  * Created by lleyn on 07.02.16.
+ * Создание массива из нечетных чесел от 1 до 99
  */
-//Создание массива из нечетных чесел от 1 до 99
+
 public class Lab3_2 {
     public static void main(String[] args) {
         int[] a = new int[50];//Массив нечетных чесел
