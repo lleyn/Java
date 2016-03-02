@@ -10,6 +10,8 @@ import java.util.regex.Pattern;
 /**
  * Created by lleyn on 06.02.16.
  */
+
+//Сравнение имен
 public class Lab2_5 {
     public static void main(String[] args) {
         InputStream inputStream = System.in;
@@ -25,7 +27,7 @@ public class Lab2_5 {
             return;
         }
         if (match(a) && match(b)) {//условие соответсвия заданию
-            if (a.equals(b)) {
+            if (a.equalsIgnoreCase(b)) {
                 System.out.println("Имена идентичны");
             } else if (a.length() == b.length()) {
                 System.out.println("Длины имен равны");

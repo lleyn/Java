@@ -36,6 +36,6 @@ public class Lab4_1 {
         }
     }
     public static int mass(int a, int b){
-        return (int)(Lab2_4.min(a,b) + Math.random()*(Math.abs(a-b)+1) );
+        return (Lab2_4.min(a,b) + (int)(Math.random()*(Math.abs(a-b)+1)) );
     }
 }

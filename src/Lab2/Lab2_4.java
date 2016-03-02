@@ -3,7 +3,7 @@ package Lab2;
 /**
  * Created by lleyn on 06.02.16.
  */
-
+//Вывод минимума 2-х чисел
 
 import java.io.BufferedReader;
 import java.io.InputStream;
