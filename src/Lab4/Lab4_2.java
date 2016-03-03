@@ -1,52 +1,27 @@
 package Lab4;
 
-
-import Lab2.Lab2_4;
-
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-
 /**
- * Created by lleyn on 07.02.16.
+ * @author lleyn on 03.03.16.
  */
 public class Lab4_2 {
-    public static void main(String[] args) {
-        InputStream inputStream = System.in;
-        Reader inputStreamReader = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-        String a_s, b_s, c_s;
-        int a = 0;
-        int b = 0;
-        int c = 0;
-        try {
-            a_s = bufferedReader.readLine();//читаем строку с клавиатуры
-            b_s = bufferedReader.readLine();
-            c_s = bufferedReader.readLine();
-            a = Integer.parseInt(a_s);
-            b = Integer.parseInt(b_s);
-            c = Integer.parseInt(c_s);
-        } catch (Exception ex) {
-            System.out.println("Произшлв ошибка при попытке ввода.");
-            return;
-        }
-        int[][] d = new int[5][10];
-        for (int j = 0; j < 5; j++){
-        for (int i = 0; i < 10; i++) {
-            d[j][i] = Lab4_1.mass(a, b);
-            System.out.print(d[j][i] + " ");
-        }
+    public static void main(String[] args) {
+        System.out.println("Введите a и b для заполнения массива случайными числами:");
+        int a = Staff.Input.integer();
+        int b = Staff.Input.integer();
+        int[][] c = new int[5][10];
+        for (int i = 0; i<5;i++){
+            for (int j = 0; j<10;j++){
+                c[i][j] = Lab4.rand(a,b);
+                System.out.format("%3d",c[i][j]);
+            }
             System.out.println();
         }
+        System.out.println("Введите номер строки для сортировки и вывода:");
+        int d = Staff.Input.integer();
+        Lab4.arr_p(c,d);
         System.out.println();
-        out(c,d);
+        c[d] = Lab4.sort(c[d]);
+        Lab4.arr_p(c,d);
     }
-        public static void out(int a,int[][] d) {
-            for (int i = 0; i < 10; i++) {
-            System.out.print(d[a-1][i] + " ");
-            }
-        }
 }
-//СДЕЛАТЬ ПРОВЕРУ НОМЕРА СТРОК

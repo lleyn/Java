@@ -1,4 +1,4 @@
-package Lab3;
+package Staff;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -8,20 +8,24 @@ import java.io.Reader;
 /**
  * Created by lleyn on 07.02.16.
  */
-public class Ceyboard_input {
-    public static void main(String[] args) {
+public class Input {
+    public static void main(String[] args){
+
+    }
+    public static int integer(){
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-
-        String a_s, b_s;
+        int a = 0;
+        String a_s;
         try {
             a_s = bufferedReader.readLine();//читаем строку с клавиатуры
-            b_s = bufferedReader.readLine();
-        } catch (Exception ex) {
-            System.out.println("Произшлв ощибка при попытке ввода имен.");
-            return;
-        }
+            a = Integer.parseInt(a_s);
 
+        } catch (Exception ex) {
+            System.out.println("Произошла ошибка при попытке ввода числа.");
+        }
+        return a;
     }
+
 }
