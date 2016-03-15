@@ -41,6 +41,12 @@ public class Lab2_4 {
 
     }
 
+    /**
+     * Нахождение минимального числа
+     * @param a 1 переменная
+     * @param b 2 переменная
+     * @return минимальное их 2-ч чисел
+     */
     public static int min(int a, int b) {
         if (a < b) {
             return a;

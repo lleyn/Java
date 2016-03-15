@@ -15,18 +15,10 @@ import java.util.regex.Pattern;
 
 public class Lab2_5 {
     public static void main(String[] args) {
-        InputStream inputStream = System.in;
-        Reader inputStreamReader = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-        String a, b;
-        try {
-            a = bufferedReader.readLine();//читаем строку с клавиатуры
-            b = bufferedReader.readLine();
-        } catch (Exception ex) {
-            System.out.println("Произшлв ощибка при попытке ввода имен.");
-            return;
-        }
+        String a = Staff.Input.string();
+        String b = Staff.Input.string();
+
         if (match(a) && match(b)) {//условие соответсвия заданию
             if (a.equalsIgnoreCase(b)) {
                 System.out.println("Имена идентичны");
@@ -35,8 +27,14 @@ public class Lab2_5 {
             } else System.out.println("Имена не равны");
 
         }
-        else System.out.println("Ошибка.В имени не могут присутствовать цифры.");
+        else System.out.println("Ошибка.В имени могут присутствовать только буквы.");
     }
+
+    /**
+     * Проверка на правльность введенного имени
+     * @param s Проверяемое имя
+     * @return True если имя введено без ошибок, иначе false
+     */
     public static boolean match(String s){
         Pattern p = Pattern.compile("^[a-zA-ZА-Яа-я]+");//создаем регулярное выражение
         Matcher m = p.matcher(s);//Анализируем строку на совпадение с шаблоном

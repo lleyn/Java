@@ -1,7 +1,7 @@
 package Lab4;
 
 /**
- * @author lleyn on 03.03.16.
+ * @author
  */
 public class Lab4_2 {
 
@@ -21,7 +21,7 @@ public class Lab4_2 {
         int d = Staff.Input.integer();
         Lab4.arr_p(c,d);
         System.out.println();
-        c[d] = Lab4.sort(c[d]);
+        c[d] = Lab4.sort(c,d);
         Lab4.arr_p(c,d);
     }
 }

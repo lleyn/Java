@@ -1,7 +1,7 @@
 package Lab2;
 
 /**
- * Created by lleyn on 06.02.16.
+ * @author lleyn
  * Вывод четных чисел от 1 до 100
  */
 

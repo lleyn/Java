@@ -3,17 +3,13 @@ package Lab4;
 import Staff.Input;
 import Lab2.Lab2_4;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
 
 /**
  * @author Lleyn
  */
 public class Lab4 {
     public static void main(String[] args) {
-        System.out.println("Введите a и b для заполнения массива случайными числами:");
+        System.out.println("Введите границы случайных чисел для заполнения массива:");
         int a = Input.integer();
         int b = Input.integer();
         int[] c = new int[20];
@@ -21,11 +17,7 @@ public class Lab4 {
             c[i] = rand(a, b);
             System.out.print(c[i]+" ");
         }
-        sort(c);
         System.out.println();
-        for (int i = 0; i < 20; i++) {
-            System.out.print(c[i]+" ");
-        }
     }
 
     /**
@@ -54,18 +46,19 @@ public class Lab4 {
      * @param a Массив для сортировки
      * @return Отсортированный массив
      */
-    public static int[] sort(int[] a) {
-        for(int i = 0; i<a.length;i++) {
-            for(int j = i; j<a.length;j++){
-                if (a[i]>a[j]) {
-                    int b = a[i];
-                    a[i] = a[j];
-                    a[j] = b;
+    public static int[] sort(int[][] a, int b) {
+        b = b-1;
+        for(int i = 0; i<a[b].length;i++) {
+            for(int j = i; j<a[b].length;j++){
+                if (a[b][i]>a[b][j]) {
+                    int c = a[b][i];
+                    a[b][i] = a[b][j];
+                    a[b][j] = c;
                 }
             }
 
         }
-        return a;
+        return a[b];
     }
 
 

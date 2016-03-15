@@ -28,4 +28,20 @@ public class Input {
         return a;
     }
 
+
+
+    public static String string(){
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String a = "";
+        try {
+            a = bufferedReader.readLine();//читаем строку с клавиатуры
+        } catch (Exception ex) {
+            System.out.println("Произшла ошибка при попытке ввода имени.");
+        }
+        return a;
+    }
+
+
 }
